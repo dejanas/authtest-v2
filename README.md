@@ -1,3 +1,3 @@
 # authtest-v2
 
-https://github.com/dejanas/authtest-v1/edit/master/README.md
+View README.md at authtest-v1 (https://github.com/dejanas/authtest-v1)
