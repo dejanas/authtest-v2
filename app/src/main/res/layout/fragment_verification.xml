@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="67dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/currentAddressTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:text="Verifikacioni email ce biti poslat na adresu:"/>
+
+   <Button
+        android:id="@+id/posaljiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorAccent"
+        android:text="@string/Potvrdi" />
+
+    <TextView
+        android:id="@+id/confirmedAddressTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Nakon verifikacije kliknite ovde."
+        android:visibility="gone"
+        android:textColor="@color/linkColor"/>
+
+    <TextView
+        android:id="@+id/sendAgainTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="Nije Vam stigao email? Pošalji ponovo."
+        android:visibility="gone"
+        android:textColor="@color/linkColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/includeFooter"
+            layout="@layout/footer" />
+    </LinearLayout>
+
+</RelativeLayout>
